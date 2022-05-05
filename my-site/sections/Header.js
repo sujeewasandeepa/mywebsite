@@ -5,6 +5,7 @@ const Header = () => {
     const navigations = [
         { label: 'Home', path: '/' },
         { label: 'About', path: '/about' },
+        { label: 'Contact', path: '/contact' }
     ];
 
     return (
