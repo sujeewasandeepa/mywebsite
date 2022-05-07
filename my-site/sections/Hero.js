@@ -1,6 +1,9 @@
+import Image from "next/image";
+import cute_flower from "../components/pictures/cute-flower.png";
+
 const Hero = () => {
   return (
-    <section>
+    <section className="container align-items align-content">
       <h1 className="text-6xl text-gray-500 my-5 font-bold">Howdy! I'm <span className="text-pink-500 dar:text-purple-500">Sujee</span></h1>
       
       <h3 className="text-3xl text-gray-400 mb-10">I am a learner 🧝🏽</h3>
@@ -15,8 +18,8 @@ const Hero = () => {
         If you want to contact me for some reason, give me a slide! 😉
       </p>
 
-      <div className="flex content-center">
-        <label for="togleButton" class="flex items-center cursor-pointer ml-10 my-10">     
+      <div className="grid place-content-center">
+        <label for="togleButton" class="align-middle cursor-pointer my-10">     
           <div className="relative">
             <input id="togleButton" type="checkbox" className="hidden"/>
         
@@ -30,8 +33,15 @@ const Hero = () => {
             ></div>
           </div>
         </label>
-      </div>
 
+        <div className="align-middle ml-10">
+          <Image
+            src={cute_flower}
+            width='200'
+            height='200'
+          />
+        </div>
+      </div>
     </section>
   )
 }
