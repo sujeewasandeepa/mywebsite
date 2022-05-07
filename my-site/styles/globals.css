@@ -20,9 +20,16 @@
         transition: all 0.3s ease-in-out;
     }
     input:checked ~ .toggle-circle {
-        transform: translateX(600%);
+        transform: translateX(1400%);
     }
-    input:checked{
-        @apply bg-red-500;
-    }  
+    .toggle-text {
+        display: none;
+        padding-left: 10px;
+        @apply ml-10;
+    }
+    input:checked ~ .toggle-path .toggle-text {
+        @apply ease-in;
+        display: inline;
+    }
+
 }
