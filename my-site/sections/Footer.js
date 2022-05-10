@@ -3,7 +3,7 @@ import sri_lanka from "../components/pictures/Flag_of_Sri_Lanka.png";
 
 const Footer = () => {
   return (
-    <div className="flex grid-cols-2 mb-10 mt-10">
+    <div className="flex grid-cols-2 mt-10">
       <div className="text-gray-500 mr-10 mt-1">
         This work is licensed under a Attribution-ShareAlike 4.0 International
       </div>
